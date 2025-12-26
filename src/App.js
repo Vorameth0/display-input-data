@@ -3,7 +3,7 @@ import RegisterSubmit from "./components/RegisterSubmit";
 
 function App() {
   return (
-    <BrowserRouter basename="/display-input-data">
+    <BrowserRouter basename="/classwork-submit-data">
       <Routes>
         <Route path="/" element={<RegisterSubmit />} />
       </Routes>
