@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/display-input-data/static/js/main.86b21ace.js",
+    "main.js": "/display-input-data/static/js/main.cffc79ee.js",
     "index.html": "/display-input-data/index.html",
-    "main.86b21ace.js.map": "/display-input-data/static/js/main.86b21ace.js.map"
+    "main.cffc79ee.js.map": "/display-input-data/static/js/main.cffc79ee.js.map"
   },
   "entrypoints": [
-    "static/js/main.86b21ace.js"
+    "static/js/main.cffc79ee.js"
   ]
 }
