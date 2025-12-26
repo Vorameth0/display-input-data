@@ -2,20 +2,21 @@
   "name": "display-input-data",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vorameth0.github.io/display-input-data",
+  "homepage": "https://github.com/Vorameth0/classwork-submit-data",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^7.11.0",
     "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.3.0"
   },
   "browserslist": {
     "production": [
