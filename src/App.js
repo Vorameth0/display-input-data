@@ -3,7 +3,7 @@ import Register from "./components/Register";
 
 function App() {
   return (
-    <BrowserRouter basename="/display-input-data">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Register />} />
         <Route path="/register" element={<Register />} />

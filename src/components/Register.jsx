@@ -45,7 +45,7 @@ function Register() {
 
       <h4>Gender</h4>
       {genders.map(g => (
-        <label key={g.id}>
+        <label key={g.id} style={{ marginRight: "10px" }}>
           <input
             type="radio"
             name="gender"
@@ -58,7 +58,7 @@ function Register() {
 
       <h4>Hobbies</h4>
       {hobbiesList.map(h => (
-        <label key={h.id}>
+        <label key={h.id} style={{ marginRight: "10px" }}>
           <input
             type="checkbox"
             value={h.label}
