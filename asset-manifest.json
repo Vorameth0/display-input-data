@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/Vorameth0/classwork-submit-data/static/js/main.21ec41ee.js",
-    "index.html": "/Vorameth0/classwork-submit-data/index.html",
-    "main.21ec41ee.js.map": "/Vorameth0/classwork-submit-data/static/js/main.21ec41ee.js.map"
+    "main.js": "/classwork-submit-data/static/js/main.21ec41ee.js",
+    "index.html": "/classwork-submit-data/index.html",
+    "main.21ec41ee.js.map": "/classwork-submit-data/static/js/main.21ec41ee.js.map"
   },
   "entrypoints": [
     "static/js/main.21ec41ee.js"
