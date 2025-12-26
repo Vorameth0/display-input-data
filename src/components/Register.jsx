@@ -39,71 +39,51 @@ function Register() {
     <div style={{ padding: "20px" }}>
       <h2>Registration Form</h2>
 
-      <div>
-        <label>Username:</label>
-        <input type="text" onChange={e => setUsername(e.target.value)} />
-      </div>
+      <input placeholder="Username" onChange={e => setUsername(e.target.value)} /><br />
+      <input placeholder="Firstname" onChange={e => setFirstname(e.target.value)} /><br />
+      <input placeholder="Lastname" onChange={e => setLastname(e.target.value)} /><br />
 
-      <div>
-        <label>Firstname:</label>
-        <input type="text" onChange={e => setFirstname(e.target.value)} />
-      </div>
+      <h4>Gender</h4>
+      {genders.map(g => (
+        <label key={g.id}>
+          <input
+            type="radio"
+            name="gender"
+            value={g.label}
+            onChange={e => setGender(e.target.value)}
+          />
+          {g.label}
+        </label>
+      ))}
 
-      <div>
-        <label>Lastname:</label>
-        <input type="text" onChange={e => setLastname(e.target.value)} />
-      </div>
+      <h4>Hobbies</h4>
+      {hobbiesList.map(h => (
+        <label key={h.id}>
+          <input
+            type="checkbox"
+            value={h.label}
+            onChange={onHobbiesToggle}
+          />
+          {h.label}
+        </label>
+      ))}
 
-      <div>
-        <label>Gender:</label><br />
-        {genders.map(g => (
-          <label key={g.id}>
-            <input
-              type="radio"
-              name="gender"
-              value={g.label}
-              onChange={e => setGender(e.target.value)}
-            />
-            {g.label}
-          </label>
+      <h4>Apply Role</h4>
+      <select onChange={e => setRole(e.target.value)}>
+        <option value="">Select role</option>
+        {roles.map(r => (
+          <option key={r.id} value={r.label}>{r.label}</option>
         ))}
-      </div>
-
-      <div>
-        <label>Hobbies:</label><br />
-        {hobbiesList.map(h => (
-          <label key={h.id}>
-            <input
-              type="checkbox"
-              value={h.label}
-              onChange={onHobbiesToggle}
-            />
-            {h.label}
-          </label>
-        ))}
-      </div>
-
-      <div>
-        <label>Apply Role:</label>
-        <select onChange={e => setRole(e.target.value)}>
-          <option value="">Select role</option>
-          {roles.map(r => (
-            <option key={r.id} value={r.label}>
-              {r.label}
-            </option>
-          ))}
-        </select>
-      </div>
+      </select>
 
       <hr />
 
-      <h3>Input Data</h3>
-      <p>Username: {username}</p>
-      <p>Firstname: {firstname}</p>
-      <p>Lastname: {lastname}</p>
-      <p>Gender: {gender}</p>
-      <p>Hobbies: {hobbies.join(", ")}</p>
-      <p>Role: {role}</p>
+      <p><b>Username:</b> {username}</p>
+      <p><b>Firstname:</b> {firstname}</p>
+      <p><b>Lastname:</b> {lastname}</p>
+      <p><b>Gender:</b> {gender}</p>
+      <p><b>Hobbies:</b> {hobbies.join(", ")}</p>
+      <p><b>Role:</b> {role}</p>
     </div>
   );
 }
